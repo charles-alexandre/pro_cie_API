@@ -1,6 +1,11 @@
 {
-  "db": {
-    "name": "db",
-    "connector": "memory"
+  "db_procie": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "procie",
+    "username": "admin",
+    "password": "admin",
+    "name": "db_procie",
+    "connector": "loopback-connector-mysql"
   }
 }

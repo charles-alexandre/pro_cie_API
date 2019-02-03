@@ -1,0 +1,25 @@
+{
+  "name": "Appointment",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+  },
+  "validations": [],
+  "relations": {
+    "feature": {
+      "type": "belongsTo",
+      "model": "Feature",
+      "foreignKey": "featureId"
+    },
+    "article": {
+      "type": "belongsTo",
+      "model": "Article",
+      "foreignKey": "articleId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

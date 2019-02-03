@@ -1,0 +1,38 @@
+{
+  "name": "Article",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "marque": {
+      "type": "string"
+    },
+    "reference": {
+      "type": "string"
+    },
+    "image": {
+      "type": "any"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "category": {
+      "type": "belongsTo",
+      "model": "Category",
+      "foreignKey": "categoryId"
+    },
+    "features": {
+      "type": "hasMany",
+      "model": "Feature",
+      "foreignKey": "articleId",
+      "through": "Appointment"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -14,25 +14,46 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "db_procie",
+    "public": false
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "db_procie",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "db_procie",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "db_procie",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "db_procie",
     "public": false
+  },
+  "Account": {
+    "dataSource": "db_procie",
+    "public": true
+  },
+  "Article": {
+    "dataSource": "db_procie",
+    "public": true
+  },
+  "Category": {
+    "dataSource": "db_procie",
+    "public": true
+  },
+  "Feature": {
+    "dataSource": "db_procie",
+    "public": true
+  },
+  "Appointment": {
+    "dataSource": "db_procie",
+    "public": true
   }
 }
